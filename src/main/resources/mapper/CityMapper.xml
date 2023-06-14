@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.snail.mapper.CityMapper">
+
+    <resultMap id="BaseResultMap" type="com.snail.domain.City">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="c_name" column="c_name" jdbcType="VARCHAR"/>
+            <result property="state" column="state" jdbcType="VARCHAR"/>
+            <result property="country" column="country" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,c_name,state,
+        country
+    </sql>
+</mapper>
